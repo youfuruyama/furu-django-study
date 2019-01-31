@@ -1,0 +1,24 @@
+metadata:
+  pactSpecification:
+    version: '2.0.0'
+consumer:
+  name: 'scc_hello_ui'
+provider:
+  name: 'scc_hello_sv'
+
+interactions:
+
+# エッジの一覧を取得する
+- description: 'hello'
+  request:
+    method: GET
+    path: /api/hello
+  response:
+    status: 200
+    headers:
+      Content-Type: 'application/json'
+    body:
+      id: '6ebe0278-efa7-49f4-b554-035fd6633108'
+      name: 'GG_TEST'
+
+

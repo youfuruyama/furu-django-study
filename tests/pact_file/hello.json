@@ -1,0 +1,33 @@
+{
+  "consumer": {
+    "name": "scc_hello_ui"
+  },
+  "interactions": [
+    {
+      "description": "hello",
+      "request": {
+        "method": "GET",
+        "path": "/api/hello"
+      },
+      "response": {
+        "body": [
+          {
+            "msg": "Hello World!"
+          }
+        ],
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  },
+  "provider": {
+    "name": "scc_hello_sv"
+  }
+}
