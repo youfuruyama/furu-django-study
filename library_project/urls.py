@@ -14,8 +14,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
+
+from django.conf.urls import include, url
+
+from . import hello_resource
+
+#from .hello_resource import _HelloRootView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #url(r'^api/hello', include(hello_resource.urls)),
+    #path('api/hello/', hello_resource._HelloRootView, name='hello'),
+    #path('api/hello/', _HelloRootView.as_view()),
+    path('api/hello/', include('books.urls')),
+
 ]
+

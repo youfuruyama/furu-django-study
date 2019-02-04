@@ -1,14 +1,21 @@
 #import responder.status_codes as status_codes
 from django.http import HttpResponse
 
+
+
 from .view import respond
 
-def add_route(api):
+#def add_route(api):
     #edge_svc = services.get('hello')
     #if edge_svc is None:
     #    return
 
-    api.add_route('/api/hello', _HelloRootView())
+    #api.add_route('/api/hello', _HelloRootView())
+
+    #urlpatterns = [
+    #    path('/api/hello', _HelloRootView()),
+    #]
+    
 
 # -----------------------------------------------------------------------------
 # ビュー
