@@ -1,4 +1,4 @@
-#import responder
+import responder
 
 from . import hello_resource
 
