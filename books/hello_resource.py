@@ -1,7 +1,7 @@
 #import responder.status_codes as status_codes
 from django.http import HttpResponse
 
-from .views import respond
+#from .views import respond
 
 
 #def add_route(api):
@@ -15,12 +15,12 @@ from .views import respond
 # ビュー
 # -----------------------------------------------------------------------------
 
-class _HelloRootView:
-    def __init__(self):
-        self.hello_svc = ""
+#class _HelloRootView:
+#    def __init__(self):
+#        self.hello_svc = ""
 
-    @respond
-    def on_get(self, req, resp):
-        content = [{"msg": "Hello World!"}]
+#    @respond
+#    def on_get(self, req, resp):
+#        content = [{"msg": "Hello World!"}]
         #return (status_codes.HTTP_200, content)
-        return (HttpResponse(status=200), content)
+#        return (HttpResponse(status=200), content)

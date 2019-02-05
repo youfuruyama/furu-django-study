@@ -19,7 +19,7 @@ from django.urls import path, include
 
 from django.conf.urls import include, url
 
-from . import hello_resource
+
 
 #from .hello_resource import _HelloRootView
 
